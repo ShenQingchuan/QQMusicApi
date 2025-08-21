@@ -1,4 +1,4 @@
-FROM node:12.18.3
+FROM node:23.3.0
 
 USER root
 
@@ -13,4 +13,4 @@ RUN npm config set registry https://registry.npmmirror.com \
 
 EXPOSE 80
 
-CMD ["cross-env","PORT=80","node","/home/qqmusic/bin/www"]
+CMD ["cross-env","PORT=3300","node","/home/qqmusic/bin/www"]
